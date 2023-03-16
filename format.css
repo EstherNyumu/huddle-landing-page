@@ -1,0 +1,128 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+  :root{ 
+  }
+  
+.register{
+    color: hsl(257, 40%, 49%);
+    background-color: white ;
+    border: none ;
+    border-radius: 2rem;
+    padding: 0.7rem;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.register:hover,.register:focus-visible{
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.Logo{
+    margin-left:5.5ch;
+}
+
+body{
+    background-image: url("images2/bg-desktop.svg");
+    background-color:hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 66rem;
+    background-attachment: fixed;
+}
+
+.Layout{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+
+.Text{
+      display: flex;
+      align-items: flex-start;    
+      flex-direction: column;
+}
+
+.paragraph{
+    color: white;
+    font-family: "Open Sans";
+    max-width:50ch;
+    text-align:start;
+}
+
+.heading{
+    color: white;
+    font-family: "Poppins" ;
+    max-width: 44ch;
+    text-align: start;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
+}
+
+.social-list {
+  display: flex;
+  align-items:flex-end;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.social-icon {
+  fill: #fff;
+  display: flex; 
+  border: 1.6px solid #ddd;
+  border-radius: 16px;
+  padding: 5px;
+  width: 1rem;
+  height: 1rem;  
+}
+
+.social-list a:is(:hover, :focus) .social-icon {
+  fill:  hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%) ;
+}
+
+  @media (max-width: 50em) {
+    .Logo{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .mockup{
+     transform: scale(1); 
+     align-self: center;  
+    }
+    .Layout{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .Text{
+        
+        align-self: center;
+        
+        
+    }
+    .heading{
+        align-self: center;
+       text-align: center;
+    }
+    .paragraph{
+        text-align: center;
+    }
+    .register{
+        align-self: center;
+    }
+    body{
+        background-image: url("images2/bg-mobile.svg");
+        background-position: top;
+        background-size: contain;
+        
+    }
+  }
+
+
