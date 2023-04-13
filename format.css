@@ -23,7 +23,7 @@
 }
 
 body{
-    background-image: url("images2/bg-desktop.svg");
+    background-image: url("images/bg-desktop.svg");
     background-color:hsl(257, 40%, 49%);
     background-repeat: no-repeat;
     background-position: center;
@@ -105,7 +105,6 @@ ol[role="list"] {
         
         align-self: center;
         
-        
     }
     .heading{
         align-self: center;
@@ -118,7 +117,7 @@ ol[role="list"] {
         align-self: center;
     }
     body{
-        background-image: url("images2/bg-mobile.svg");
+        background-image: url("images/bg-mobile.svg");
         background-position: top;
         background-size: contain;
         
