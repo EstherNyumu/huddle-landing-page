@@ -1,47 +1,35 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
-  :root{ 
-  }
-  
-.register{
-    color: hsl(257, 40%, 49%);
-    background-color: white ;
-    border: none ;
-    border-radius: 2rem;
-    padding: 0.7rem;
-    width: 10rem;
-    cursor: pointer;
-}
-
-.register:hover,.register:focus-visible{
-    color: white;
-    background-color: hsl(300, 69%, 71%);
-}
-
-.Logo{
-    margin-left:5.5ch;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root{}
 
 body{
     background-image: url("images/bg-desktop.svg");
     background-color:hsl(257, 40%, 49%);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 66rem;
+    background-size: 80%;
     background-attachment: fixed;
 }
 
-.Layout{
+.main-section{
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.Text{
-      display: flex;
-      align-items: flex-start;    
-      flex-direction: column;
+.display{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.mockup{
+    width: 110%;
 }
 
 .paragraph{
@@ -58,43 +46,61 @@ body{
     text-align: start;
 }
 
+.register{
+    color: hsl(257, 40%, 49%);
+    background-color: white ;
+    border: none ;
+    border-radius: 20px;
+    padding: 12px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.register:hover,.register:focus-visible{
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
 ul[role="list"],
 ol[role="list"] {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .social-list {
-  display: flex;
-  align-items:flex-end;
-  justify-content: flex-end;
-  gap: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+
+    gap: 0.5rem;
+
 }
 
 .social-icon {
-  fill: #fff;
-  display: flex; 
-  border: 1.6px solid #ddd;
-  border-radius: 16px;
-  padding: 5px;
-  width: 1rem;
-  height: 1rem;  
+    fill: #fff;
+    display: flex;
+    border: 1.6px solid #ddd;
+    border-radius: 16px;
+    padding: 5px;
+    width: 1rem;
+    height: 1rem;
 }
 
 .social-list a:is(:hover, :focus) .social-icon {
-  fill:  hsl(300, 69%, 71%);
-  border-color: hsl(300, 69%, 71%) ;
+    fill:  hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%) ;
 }
 
-  @media (max-width: 50em) {
+@media (max-width: 50em) {
     .Logo{
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
     }
     .mockup{
-     transform: scale(1); 
-     align-self: center;  
+        transform: scale(1);
+        align-self: center;
     }
     .Layout{
         display: flex;
@@ -102,13 +108,13 @@ ol[role="list"] {
 
     }
     .Text{
-        
+
         align-self: center;
-        
+
     }
     .heading{
         align-self: center;
-       text-align: center;
+        text-align: center;
     }
     .paragraph{
         text-align: center;
@@ -120,8 +126,8 @@ ol[role="list"] {
         background-image: url("images/bg-mobile.svg");
         background-position: top;
         background-size: contain;
-        
+
     }
-  }
+}
 
 
