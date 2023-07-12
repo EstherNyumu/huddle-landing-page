@@ -23,26 +23,21 @@ body{
     padding: 100px;
 }
 
-.text{
-    display: flex;
-    flex-direction: column;
-}
-
 .mockup{
     width: 110%;
 }
 
 .paragraph{
     color: white;
-    font-family: "Open Sans";
-    max-width:50ch;
+    font-family: "Open Sans", sans-serif;
+    max-width:500px;
     text-align:start;
 }
 
 .heading{
     color: white;
-    font-family: "Poppins" ;
-    max-width: 44ch;
+    font-family: "Poppins", sans-serif ;
+    max-width: 500px;
     text-align: start;
 }
 
@@ -72,9 +67,7 @@ ol[role="list"] {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-
     gap: 0.5rem;
-
 }
 
 .social-icon {
@@ -92,42 +85,81 @@ ol[role="list"] {
     border-color: hsl(300, 69%, 71%) ;
 }
 
-@media (max-width: 50em) {
-    .Logo{
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    .mockup{
-        transform: scale(1);
-        align-self: center;
-    }
-    .Layout{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .Text{
-
-        align-self: center;
-
-    }
-    .heading{
-        align-self: center;
-        text-align: center;
-    }
-    .paragraph{
-        text-align: center;
-    }
-    .register{
-        align-self: center;
-    }
+@media (max-width: 480px ) {
     body{
         background-image: url("images/bg-mobile.svg");
-        background-position: top;
+        background-position: center;
         background-size: contain;
+    }
 
+    .main-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .display {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .heading,.paragraph{
+        text-align: center;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mockup{
+        width: 90%;
+        margin: auto;
+    }
+
+    .social-list {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
     }
 }
 
+@media (max-width: 1200px) {
+      body{
+        background-image: url("images/bg-mobile.svg");
+        background-position: center;
+        background-size: contain;
+    }
+    .main-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+      .display {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+      .mockup{
+        width: 100%;
+        margin: auto;
+    }
+        .heading,.paragraph{
+        text-align: center;
+    }
 
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+     .social-list {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
