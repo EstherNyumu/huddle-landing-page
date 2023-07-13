@@ -81,49 +81,8 @@ ol[role="list"] {
 }
 
 .social-list a:is(:hover, :focus) .social-icon {
-    fill:  hsl(300, 69%, 71%);
-    border-color: hsl(300, 69%, 71%) ;
-}
-
-@media (max-width: 480px ) {
-    body{
-        background-image: url("images/bg-mobile.svg");
-        background-position: center;
-        background-size: contain;
-    }
-
-    .main-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .display {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    }
-    .heading,.paragraph{
-        text-align: center;
-    }
-
-    .text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mockup{
-        width: 90%;
-        margin: auto;
-    }
-
-    .social-list {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
+    fill: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
 }
 
 @media (max-width: 1200px) {
